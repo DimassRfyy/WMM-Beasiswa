@@ -27,12 +27,6 @@ function Home() {
     };
   }, []);
 
-  // Form submit
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    alert("Terima kasih telah mendaftar! Kami akan menghubungi Anda segera.");
-  };
-
   // Helper untuk mengisi ref animasi
   const setAnimatedRef = (el, idx) => {
     animatedRefs.current[idx] = el;
@@ -43,7 +37,7 @@ function Home() {
       <Navbar />
       <main>
         {/* Hero Section */}
-        <section id="home" className="relative py-16 md:py-24 overflow-hidden">
+        <section id="home" className="relative py-16 md:py-24 overflow-hidden lg:px-12">
           <div className="absolute inset-0 z-0">
             <img src="assets/images/thumbnails/bg-nailart.avif" alt="Beauty background" className="w-full h-full object-cover opacity-10" />
             <div className="absolute inset-0 bg-gradient-to-r from-pink-50 to-white opacity-90" />
@@ -84,12 +78,13 @@ function Home() {
               </div>
               <div className="md:w-1/2">
                 <div className="animate-scale js-animate" ref={(el) => setAnimatedRef(el, 1)}>
-                  <div className="relative">
-                    <div className="rounded-2xl overflow-hidden shadow-2xl">
-                      <img src="assets/images/thumbnails/bg-training.avif" alt="SalonKita Scholarship Program" className="w-full h-auto" />
+                  <div className="relative flex items-center justify-center">
+                    {/* Background oval/dekoratif */}
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <div className="w-72 h-72 md:w-115 md:h-115 bg-gradient-to-br from-pink-100 via-pink-200 to-pink-300 rounded-full blur-md opacity-70"></div>
                     </div>
-                    <div className="absolute -bottom-5 -right-5 bg-pink-600 text-white px-6 py-3 rounded-lg shadow-lg transform rotate-3">
-                      <span className="font-bold">100% GRATIS</span>
+                    <div className="rounded-2xl overflow-hidden relative z-10">
+                      <img src="assets/images/thumbnails/banner1-Photoroom.png" alt="SalonKita Scholarship Program" className="w-full h-auto" />
                     </div>
                   </div>
                 </div>
@@ -98,7 +93,6 @@ function Home() {
           </div>
           {/* Decorative elements */}
           <div className="absolute top-20 left-10 w-20 h-20 bg-pink-200 rounded-full opacity-20 animate-pulse" />
-          <div className="absolute bottom-10 right-10 w-32 h-32 bg-pink-300 rounded-full opacity-20 animate-pulse" />
         </section>
 
         {/* Partners Section */}
@@ -122,7 +116,7 @@ function Home() {
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-20 md:py-28 bg-white">
+        <section id="about" className="py-20 md:py-28 bg-white lg:px-4">
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="md:w-1/2">
@@ -252,7 +246,7 @@ function Home() {
         </section>
 
         {/* Specializations Section */}
-        <section id="specializations" className="py-20 md:py-28 bg-pink-50">
+        <section id="specializations" className="py-20 md:py-28 bg-pink-50 lg:px-8">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-in-up js-animate" ref={(el) => setAnimatedRef(el, 2)}>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
@@ -570,7 +564,7 @@ function Home() {
         </section>
 
         {/* Benefits Section */}
-        <section id="benefits" className="py-20 md:py-28 bg-white relative overflow-hidden">
+        <section id="benefits" className="py-20 md:py-28 bg-white relative overflow-hidden lg:px-12">
           {/* Background element - responsive version */}
           <div className="absolute top-0 right-0 w-full md:w-1/3 h-full bg-white-50 z-0" />
           <div className="container mx-auto px-4 relative z-10">
@@ -692,7 +686,7 @@ function Home() {
         </section>
 
         {/* Requirements Section */}
-        <section id="requirements" className="py-20 md:py-28 bg-white">
+        <section id="requirements" className="py-20 md:py-28 bg-white lg:px-8">
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="md:w-1/2">
@@ -1037,19 +1031,17 @@ function Home() {
         </section>
 
         {/* CTA Section */}
-        <section id="apply" className="py-20 md:py-28 bg-pink-600 text-white relative overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=2070&auto=format&fit=crop" alt="Beauty background" className="w-full h-full object-cover opacity-10" />
-          </div>
-          <div className="container mx-auto px-3 sm:px-4 relative z-10">
-            <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
+        <section id="apply" className="py-16 px-2 md:py-28 bg-white relative overflow-hidden lg:px-14">
+          <div className="container mx-auto px-4 relative z-10">
+            <div className="flex flex-col md:flex-row items-center gap-20">
+              {/* Left side content */}
               <div className="w-full md:w-1/2">
-                <div className="animate-scale js-animate" ref={(el) => setAnimatedRef(el, 18)}>
-                  <h2 className="text-3xl md:text-4xl font-bold mb-6">Daftar Sekarang!</h2>
-                  <p className="text-xl mb-8 max-w-lg">Jangan lewatkan kesempatan untuk mendapatkan beasiswa pelatihan kecantikan dan jaminan kerja. Daftar sekarang dan wujudkan karirmu di industri kecantikan!</p>
-                  <div className="space-y-6 mb-8">
+                <div className="animate-fade-in-up js-animate">
+                  <h2 className="text-3xl md:text-5xl font-bold text-pink-600 mb-6">Daftar Sekarang!</h2>
+                  <p className="text-xl text-gray-700 mb-8 max-w-lg">Jangan lewatkan kesempatan untuk mendapatkan beasiswa pelatihan kecantikan dan jaminan kerja. Daftar sekarang dan wujudkan karirmu di industri kecantikan!</p>
+                  <div className="space-y-4 mb-8">
                     <div className="flex items-center">
-                      <div className="bg-pink-500 p-2 rounded-full mr-4">
+                      <div className="bg-pink-600 p-2 rounded-full mr-4 flex-shrink-0">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width={20}
@@ -1066,10 +1058,10 @@ function Home() {
                           <path d="m9 11 3 3L22 4" />
                         </svg>
                       </div>
-                      <p>Pelatihan intensif selama 6 bulan</p>
+                      <p className="text-gray-700">Pelatihan intensif selama 6 bulan</p>
                     </div>
                     <div className="flex items-center">
-                      <div className="bg-pink-500 p-2 rounded-full mr-4">
+                      <div className="bg-pink-600 p-2 rounded-full mr-4 flex-shrink-0">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width={20}
@@ -1086,10 +1078,10 @@ function Home() {
                           <path d="m9 11 3 3L22 4" />
                         </svg>
                       </div>
-                      <p>Magang di salon dan mitra industri kecantikan</p>
+                      <p className="text-gray-700">Magang di salon dan mitra industri</p>
                     </div>
                     <div className="flex items-center">
-                      <div className="bg-pink-500 p-2 rounded-full mr-4">
+                      <div className="bg-pink-600 p-2 rounded-full mr-4 flex-shrink-0">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width={20}
@@ -1106,55 +1098,82 @@ function Home() {
                           <path d="m9 11 3 3L22 4" />
                         </svg>
                       </div>
-                      <p>Jaminan kerja untuk peserta terbaik</p>
+                      <p className="text-gray-700">Jaminan kerja untuk peserta terbaik</p>
                     </div>
                   </div>
-                  <div className="flex items-center bg-pink-500 p-4 rounded-lg mb-8">
-                    <div className="bg-white p-2 rounded-full text-pink-600 mr-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-star">
-                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  <div className="flex items-center bg-pink-100 p-4 rounded-lg mb-8">
+                    <div className="bg-pink-600 p-2 rounded-full text-white mr-4 flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" width={20} height={20} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-clock">
+                        <circle cx={12} cy={12} r={10} />
+                        <polyline points="12,6 12,12 16,14" />
                       </svg>
                     </div>
-                    <p className="font-medium">Pendaftaran ditutup dalam xx hari lagi!</p>
+                    <p className="font-medium text-pink-700">Pendaftaran ditutup dalam xx hari lagi!</p>
+                  </div>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <a
+                      href="https://forms.google.com/salonkita-beasiswa"
+                      target="_blank"
+                      className="inline-block bg-pink-600 text-white font-bold px-8 py-4 rounded-full hover:bg-pink-700 transform hover:scale-105 transition duration-300 text-center shadow-lg"
+                    >
+                      Isi Form Pendaftaran
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={18}
+                        height={18}
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="lucide lucide-external-link inline ml-2"
+                      >
+                        <path d="M15 3h6v6" />
+                        <path d="M10 14 21 3" />
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                      </svg>
+                    </a>
+                    <a href="/partnership" className="inline-flex items-center justify-center bg-white text-pink-600 font-semibold px-8 py-4 rounded-full border border-pink-200 hover:border-pink-600 transition duration-300 text-center">
+                      Jadi Partner
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={18}
+                        height={18}
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="lucide lucide-chevron-right ml-2"
+                      >
+                        <path d="m9 18 6-6-6-6" />
+                      </svg>
+                    </a>
                   </div>
                 </div>
               </div>
-              <div className="w-full md:w-1/2">
-                <div className="bg-white text-gray-800 p-8 rounded-xl shadow-xl animate-fade-in-up js-animate">
-                  <h3 className="text-2xl font-bold text-pink-600 mb-6">Formulir Pendaftaran</h3>
-                  <form id="registration-form" onSubmit={handleSubmit}>
-                    <div className="mb-4">
-                      <label className="block text-gray-700 text-sm font-medium mb-2">Nama Lengkap</label>
-                      <input type="text" placeholder="Masukkan nama lengkap" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:border-transparent" required="" />
+              {/* Right side illustration */}
+              <div className="w-full md:w-1/2 hidden md:block">
+                <div className="animate-scale">
+                  <div className="relative">
+                    <div className="rounded-2xl overflow-hidden">
+                      <img src="assets/images/thumbnails/register.jpg" alt="Ilustrasi Pendaftaran" className="w-full h-auto" />
                     </div>
-                    <div className="mb-4">
-                      <label className="block text-gray-700 text-sm font-medium mb-2">Email</label>
-                      <input type="email" placeholder="Masukkan email" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:border-transparent" required="" />
+                    <div className="absolute -bottom-4 -left-4 bg-pink-600 text-white px-4 py-2 rounded-lg shadow-lg transform -rotate-3">
+                      <span className="font-bold text-sm">DAFTAR GRATIS!</span>
                     </div>
-                    <div className="mb-4">
-                      <label className="block text-gray-700 text-sm font-medium mb-2">Nomor Telepon</label>
-                      <input type="tel" placeholder="Masukkan nomor telepon" className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:border-transparent" required="" />
-                    </div>
-                    <div className="mb-6">
-                      <label className="block text-gray-700 text-sm font-medium mb-2">Bidang Pelatihan</label>
-                      <select className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-300 focus:border-transparent" required="">
-                        <option value="">Pilih Bidang Pelatihan</option>
-                        <option value="beauty-specialist">Beauty Specialist (Therapist)</option>
-                        <option value="beauty-administration">Beauty Administration</option>
-                        <option value="beauty-consultant">Beauty Consultant</option>
-                      </select>
-                    </div>
-                    <button type="submit" className="w-full bg-pink-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-pink-700 transition duration-300 transform hover:scale-105 shadow-md">
-                      Daftar Sekarang
-                    </button>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          {/* Decorative elements */}
+          <div className="absolute top-20 left-10 w-16 h-16 bg-pink-200 rounded-full opacity-20 animate-pulse" />
         </section>
       </main>
-    <Footer />
+      <Footer />
     </>
   );
 }

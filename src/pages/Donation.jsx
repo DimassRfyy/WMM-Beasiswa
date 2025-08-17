@@ -275,6 +275,48 @@ function Donation() {
             </div>
           </div>
         </section>
+
+
+        {/* Donation CTA Section Sort*/}
+        <section className="py-6 bg-gradient-to-r from-pink-50 to-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <div className="flex flex-col md:flex-row items-center gap-8">
+                {/* Illustration */}
+                <div className="md:w-1/2">
+                  <div className="animate-scale">
+                    <img src="assets/images/thumbnails/donation.png" alt="Ilustrasi Donasi" className="w-full h-auto max-w-xs mx-auto" />
+                  </div>
+                </div>
+                {/* Content */}
+                <div className="md:w-1/2 text-center md:text-left">
+                  <div className="animate-fade-in-up">
+                    <h3 className="text-2xl md:text-3xl font-bold text-pink-600 mb-4">Donasi Anda, Harapan Mereka</h3>
+                    <p className="text-gray-700 mb-6 text-lg">Setiap kontribusi Anda membantu mewujudkan mimpi perempuan Indonesia untuk berkarir di industri kecantikan.</p>
+                    <a href="/donation" className="inline-block bg-pink-600 text-white font-semibold px-8 py-3 rounded-full hover:bg-pink-700 transform hover:scale-105 transition duration-300 shadow-lg">
+                      Donasi Sekarang
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={18}
+                        height={18}
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="lucide lucide-heart inline ml-2"
+                      >
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Donation CTA Section */}
         <section id="donation-form" className="py-20 md:py-28 bg-pink-600 text-white relative overflow-hidden">
           <div className="absolute inset-0 z-0">

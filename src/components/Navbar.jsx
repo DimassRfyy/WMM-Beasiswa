@@ -91,7 +91,7 @@ const Navbar = () => {
       {/* Overlay for mobile sidebar */}
       <div id="sidebar-overlay" className={`fixed inset-0 bg-black/50 z-40 md:hidden ${sidebarOpen ? "" : "hidden"}`} onClick={closeSidebar} />
       {/* Header */}
-      <header className="sticky top-0 bg-white shadow-sm z-30">
+      <header className="sticky top-0 bg-white shadow-sm z-30 lg:px-8">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
           <div className="flex items-center">
             <img src="assets/images/logos/logo.png" alt="SalonKita Logo" className="h-12 w-auto" />

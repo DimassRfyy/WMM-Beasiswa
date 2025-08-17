@@ -6,10 +6,12 @@ import Sponsorship from './pages/Sponsorship.jsx';
 import Mentor from './pages/Mentor.jsx';
 import Coach from './pages/Coach.jsx';
 import Donation from './pages/Donation.jsx';
+import ScrollToTop from './components/ScrollOnTop.jsx';
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/partnership" element={<Partnership />} />
