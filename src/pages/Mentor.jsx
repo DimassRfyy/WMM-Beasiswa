@@ -27,10 +27,6 @@ function Mentor() {
                   Wirausaha Muda Mandiri Foundation membuka peluang bagi siapa saja yang memiliki kepedulian dan waktu untuk berkontribusi sebagai Mentor Program 1.000 Beasiswa Beauty Artist. Tidak harus seorang psikolog profesional, namun
                   memiliki empati, komunikasi yang baik, dan komitmen untuk mendampingi secara konsisten sangat diutamakan.
                 </p>
-                <div className="bg-pink-50 p-6 rounded-lg mb-8 max-w-2xl mx-auto border-l-4 border-pink-600">
-                  <p className="text-lg font-medium text-pink-700 italic">💬 "Satu sesi mentoring bisa membuka seribu pintu perubahan. Yuk, bantu mereka melangkah lebih jauh!"</p>
-                </div>
-                <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">Sebagai mentor, Anda tidak hanya memberikan pengetahuan, tetapi juga menjadi pendamping yang menguatkan langkah para peserta menuju kemandirian.</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a href="#mentor-form" className="inline-block bg-pink-600 text-white font-semibold px-8 py-4 rounded-full hover:bg-pink-700 transform hover:scale-105 transition duration-300 text-center shadow-lg">
                     📝 Isi Form Pendaftaran Mentor
@@ -60,13 +56,14 @@ function Mentor() {
           <div className="absolute top-20 left-10 w-20 h-20 bg-pink-200 rounded-full opacity-20 animate-pulse" />
           <div className="absolute bottom-10 right-10 w-32 h-32 bg-pink-300 rounded-full opacity-20 animate-pulse" />
         </section>
+
         {/* Mentor Role Section */}
-        <section id="mentor-role" className="py-20 md:py-28 bg-white">
+        <section id="mentor-role" className="py-20 md:py-28 bg-white lg:px-16">
           <div className="container mx-auto px-4">
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="md:w-1/2">
-                <div className="relative">
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=2088&auto=format&fit=crop" alt="Mentor guidance" className="rounded-lg shadow-xl" />
+                <div className="relative mb-10">
+                  <img src="assets/images/thumbnails/mentor.jpg" alt="Mentor guidance" className="rounded-lg shadow-xl" />
                   <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg">
                     <div className="flex items-center gap-3">
                       <div className="bg-pink-100 p-3 rounded-full">
@@ -92,17 +89,15 @@ function Mentor() {
                     </div>
                   </div>
                 </div>
+                <div className="bg-pink-50 p-6 rounded-lg border-l-4 border-pink-600">
+                  <p className="text-gray-700 italic">"Sebagai mentor, Anda menjadi cahaya yang menerangi jalan mereka menuju kemandirian dan kesuksesan."</p>
+                </div>
               </div>
               <div className="md:w-1/2">
                 <div className="animate-fade-in-up js-animate">
-                  <div className="inline-block px-4 py-1 bg-pink-100 text-pink-600 rounded-full text-sm font-medium mb-4">Peran Mentor</div>
                   <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
                     Peran <span className="text-pink-600">Mentor</span> dalam Program
                   </h2>
-                  <p className="text-lg text-gray-700 mb-6">
-                    Mentor berperan sebagai pendamping non-teknis yang mendukung peserta dari sisi psikologis dan emosional selama proses pelatihan berlangsung. Tugas utamanya adalah mendengarkan, memotivasi, dan membimbing peserta untuk
-                    tetap semangat, percaya diri, dan mampu menghadapi tantangan pribadi.
-                  </p>
                   <div className="space-y-4 mb-8">
                     <div className="flex items-start bg-white p-4 rounded-lg shadow-sm border border-pink-100">
                       <div className="bg-pink-100 p-2 rounded-full text-pink-600 mr-4 flex-shrink-0">
@@ -176,26 +171,19 @@ function Mentor() {
                       </div>
                     </div>
                   </div>
-                  <div className="bg-pink-50 p-6 rounded-lg border-l-4 border-pink-600">
-                    <p className="text-gray-700 italic">"Sebagai mentor, Anda menjadi cahaya yang menerangi jalan mereka menuju kemandirian dan kesuksesan."</p>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
         {/* Criteria Section */}
-        <section className="py-20 md:py-28 bg-pink-50">
+        <section className="py-20 bg-pink-50">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-in-up js-animate">
-              <div className="inline-block px-4 py-1 bg-pink-100 text-pink-600 rounded-full text-sm font-medium mb-4">Kriteria Calon Mentor</div>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
                 Siapa yang Bisa <span className="text-pink-600">Menjadi Mentor?</span>
               </h2>
-              <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-                Kami membuka kesempatan kepada siapa saja yang memiliki kepedulian dan waktu untuk berkontribusi. Tidak harus seorang psikolog profesional, namun memiliki empati, komunikasi yang baik, dan komitmen untuk mendampingi secara
-                konsisten sangat diutamakan.
-              </p>
             </div>
             <div className="max-w-4xl mx-auto">
               <div className="bg-white rounded-xl p-8 shadow-lg animate-fade-in-up js-animate">
@@ -329,11 +317,11 @@ function Mentor() {
             </div>
           </div>
         </section>
+
         {/* Benefits Section */}
-        <section className="py-20 md:py-28 bg-white">
+        <section className="py-20 md:py-28 bg-white lg:px-12">
           <div className="container mx-auto px-4">
             <div className="text-center mb-16 animate-fade-in-up js-animate">
-              <div className="inline-block px-4 py-1 bg-pink-100 text-pink-600 rounded-full text-sm font-medium mb-4">Manfaat bagi Mentor</div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
                 Manfaat yang <span className="text-pink-600">Anda Peroleh</span>
               </h2>
@@ -501,78 +489,77 @@ function Mentor() {
             </div>
           </div>
         </section>
+
         {/* CTA Section */}
-        <section id="mentor-form" className="py-20 md:py-28 bg-pink-600 text-white relative overflow-hidden">
-          <div className="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=2070&auto=format&fit=crop" alt="Beauty background" className="w-full h-full object-cover opacity-10" />
-          </div>
+        <section id="mentor-form" className="py-20 md:py-28 bg-white relative overflow-hidden lg:px-16 px-2">
           <div className="container mx-auto px-4 relative z-10">
-            <div className="text-center max-w-4xl mx-auto">
-              <div className="animate-fade-in-up js-animate">
-                <h2 className="text-4xl md:text-5xl font-bold mb-6">Siap Menjadi Mentor?</h2>
-                <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">📝 Tertarik menjadi mentor? Isi Form Pendaftaran Mentor dan mulailah memberi dampak hari ini!</p>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 max-w-4xl mx-auto">
-                  <div className="flex items-center justify-center bg-pink-500 p-6 rounded-lg">
-                    <div className="text-center">
-                      <div className="bg-white p-3 rounded-full text-pink-600 mx-auto mb-3 w-12 h-12 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-heart">
-                          <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
-                        </svg>
-                      </div>
-                      <p className="font-semibold">Dukungan Emosional</p>
-                      <p className="text-sm opacity-90">Pendampingan Psikologis</p>
-                    </div>
+            <div className="flex flex-col lg:flex-row items-center gap-12">
+              {/* Left Column - 2/3 Content and Buttons */}
+              <div className="lg:w-2/3">
+                <div className="animate-fade-in-up js-animate">
+                  <div className="inline-block px-4 py-1 bg-pink-100 text-pink-600 rounded-full text-sm font-medium mb-6">🌟 Bergabung Sebagai Mentor 🌟</div>
+                  <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">Siap Menjadi Mentor?</h2>
+                  <p className="text-xl text-gray-700 mb-8">📝 Tertarik menjadi mentor? Isi Form Pendaftaran Mentor dan mulailah memberi dampak hari ini!</p>
+                  <div className="bg-pink-50 p-6 rounded-lg mb-8 border-l-4 border-pink-600">
+                    <p className="text-xl font-medium text-pink-700 italic">"Satu sesi mentoring bisa membuka seribu pintu perubahan. Yuk, bantu mereka melangkah lebih jauh!"</p>
                   </div>
-                  <div className="flex items-center justify-center bg-pink-500 p-6 rounded-lg">
-                    <div className="text-center">
-                      <div className="bg-white p-3 rounded-full text-pink-600 mx-auto mb-3 w-12 h-12 flex items-center justify-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width={24}
-                          height={24}
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth={2}
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          className="lucide lucide-message-circle"
-                        >
-                          <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
-                        </svg>
-                      </div>
-                      <p className="font-semibold">Mendengarkan</p>
-                      <p className="text-sm opacity-90">Tempat Cerita Aman</p>
-                    </div>
-                  </div>
-                  <div className="flex items-center justify-center bg-pink-500 p-6 rounded-lg">
-                    <div className="text-center">
-                      <div className="bg-white p-3 rounded-full text-pink-600 mx-auto mb-3 w-12 h-12 flex items-center justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-target">
-                          <circle cx={12} cy={12} r={10} />
-                          <circle cx={12} cy={12} r={6} />
-                          <circle cx={12} cy={12} r={2} />
-                        </svg>
-                      </div>
-                      <p className="font-semibold">Motivasi</p>
-                      <p className="text-sm opacity-90">Mencapai Tujuan</p>
-                    </div>
+                  <div className="flex flex-col sm:flex-row gap-4">
+                    <a href="#" className="inline-block bg-pink-600 text-white font-bold px-8 py-4 rounded-full hover:bg-pink-700 transform hover:scale-105 transition duration-300 text-center shadow-lg">
+                      📝 Isi Form Pendaftaran Mentor
+                    </a>
+                    <a
+                      href="mailto:mentor@salonkita.id"
+                      className="inline-flex items-center justify-center bg-white text-pink-600 font-bold px-8 py-4 rounded-full border-2 border-pink-600 hover:bg-pink-50 transition duration-300 text-center"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={20}
+                        height={20}
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="lucide lucide-file-text mr-2"
+                      >
+                        <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                        <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                        <path d="M10 9H8" />
+                        <path d="M16 13H8" />
+                        <path d="M16 17H8" />
+                      </svg>
+                      Lihat Proposal Mentor
+                    </a>
                   </div>
                 </div>
-                <div className="bg-pink-500 p-6 rounded-lg mb-8 max-w-2xl mx-auto">
-                  <p className="text-xl font-medium text-center">"Satu sesi mentoring bisa membuka seribu pintu perubahan. Yuk, bantu mereka melangkah lebih jauh!"</p>
-                </div>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a href="#" className="inline-block bg-white text-pink-600 font-bold px-8 py-4 rounded-full hover:bg-gray-100 transform hover:scale-105 transition duration-300 text-center shadow-lg">
-                    📝 Isi Form Pendaftaran Mentor
-                  </a>
-                  <a href="mailto:mentor@salonkita.id" className="inline-flex items-center justify-center bg-pink-500 text-white font-bold px-8 py-4 rounded-full border-2 border-white hover:bg-pink-400 transition duration-300 text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width={18} height={18} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-mail mr-2">
-                      <rect width={20} height={16} x={2} y={4} rx={2} />
-                      <path d="m22 7-10 5L2 7" />
-                    </svg>
-                    Hubungi Tim Mentor
-                  </a>
+              </div>
+              {/* Right Column - 1/3 Badge and Icon */}
+              <div className="md:w-1/3 justify-center items-center hidden lg:block">
+                <div className="relative w-full h-72 md:h-96 flex justify-center items-center">
+                  <div className="bg-gradient-to-br from-pink-100 to-pink-300 rounded-2xl shadow-xl w-full h-72 md:h-96 flex flex-col justify-center items-center p-8">
+                    <div className="bg-white p-4 rounded-full shadow-md mb-4">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={20}
+                        height={20}
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="lucide lucide-heart text-pink-600"
+                      >
+                        <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                      </svg>
+                    </div>
+                    <p className="text-sm text-gray-500">Mentor Aktif</p>
+                    <p className="text-2xl font-bold text-pink-600">25+</p>
+                    <div className="mt-6 text-center">
+                      <span className="inline-block bg-pink-600 text-white text-xs font-semibold px-4 py-2 rounded-full shadow">Bergabung Sekarang!</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
