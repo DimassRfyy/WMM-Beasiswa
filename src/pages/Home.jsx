@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 function Home() {
   // Refs untuk animasi scroll
@@ -1030,6 +1031,168 @@ function Home() {
           </div>
         </section>
 
+        {/* Mentor & Coach CTA Section */}
+        <section className="py-16 md:py-20 bg-gradient-to-r from-pink-50 to-white lg:px-12 px-2">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="flex flex-col lg:flex-row items-center gap-12">
+                {/* Image */}
+                <div className="lg:w-1/3">
+                  <div className="animate-scale">
+                    <div className="relative">
+                      <img src="assets/images/thumbnails/mentor.jpg" alt="Mentor & Coach Illustration" className="w-full h-auto max-w-sm mx-auto rounded-2xl shadow-lg" />
+                      <div className="absolute -bottom-3 -right-3 bg-pink-600 text-white px-4 py-2 rounded-lg shadow-lg transform rotate-3">
+                        <span className="font-bold text-sm">BERGABUNG!</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* Content */}
+                <div className="lg:w-2/3 text-center lg:text-left">
+                  <div className="animate-fade-in-up">
+                    <h3 className="text-3xl md:text-4xl font-bold text-pink-600 mb-6">Jadilah Bagian Perubahan</h3>
+                    <p className="text-lg text-gray-700 mb-8 max-w-2xl">
+                      Bergabunglah sebagai mentor atau coach dan berikan dampak nyata bagi 1000 perempuan Indonesia. Setiap sesi yang Anda berikan akan membuka pintu kesempatan baru bagi mereka.
+                    </p>
+                    {/* Benefits Points */}
+                    <div className="hidden md:grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                      <div className="flex items-center">
+                        <div className="bg-pink-600 p-2 rounded-full mr-4 flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width={16}
+                            height={16}
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="lucide lucide-heart text-white"
+                          >
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.29 1.51 4.04 3 5.5l7 7Z" />
+                          </svg>
+                        </div>
+                        <p className="text-gray-700">Berikan dampak sosial nyata</p>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="bg-pink-600 p-2 rounded-full mr-4 flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width={16}
+                            height={16}
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="lucide lucide-users text-white"
+                          >
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                            <circle cx={9} cy={7} r={4} />
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                          </svg>
+                        </div>
+                        <p className="text-gray-700">Perluas jaringan profesional</p>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="bg-pink-600 p-2 rounded-full mr-4 flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width={16}
+                            height={16}
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="lucide lucide-graduation-cap text-white"
+                          >
+                            <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
+                            <path d="M22 10v6" />
+                            <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+                          </svg>
+                        </div>
+                        <p className="text-gray-700">Berbagi ilmu dan pengalaman</p>
+                      </div>
+                      <div className="flex items-center">
+                        <div className="bg-pink-600 p-2 rounded-full mr-4 flex-shrink-0">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width={16}
+                            height={16}
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            className="lucide lucide-star text-white"
+                          >
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" />
+                          </svg>
+                        </div>
+                        <p className="text-gray-700">Pengembangan diri berkelanjutan</p>
+                      </div>
+                    </div>
+                    {/* Buttons */}
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                      <Link to="/mentor" className="inline-block bg-pink-600 text-white font-bold px-8 py-4 rounded-full hover:bg-pink-700 transform hover:scale-105 transition duration-300 text-center shadow-lg">
+                        Join Mentor
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width={18}
+                          height={18}
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="lucide lucide-users inline ml-2"
+                        >
+                          <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                          <circle cx={9} cy={7} r={4} />
+                          <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                          <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                      </Link>
+                      <Link
+                        to="/coach"
+                        className="inline-flex items-center justify-center bg-white text-pink-600 font-bold px-8 py-4 rounded-full border-2 border-pink-600 hover:bg-pink-600 hover:text-white transition duration-300 text-center shadow-lg"
+                      >
+                        Join Coach
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width={18}
+                          height={18}
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          className="lucide lucide-graduation-cap ml-2"
+                        >
+                          <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" />
+                          <path d="M22 10v6" />
+                          <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+                        </svg>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Decorative elements */}
+          <div className="absolute top-20 left-10 w-16 h-16 bg-pink-200 rounded-full opacity-20 animate-pulse" />
+          <div className="absolute bottom-10 right-10 w-24 h-24 bg-pink-300 rounded-full opacity-20 animate-pulse" />
+        </section>
+
         {/* CTA Section */}
         <section id="apply" className="py-16 px-2 md:py-28 bg-white relative overflow-hidden lg:px-14">
           <div className="container mx-auto px-4 relative z-10">
@@ -1112,7 +1275,7 @@ function Home() {
                   </div>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <a
-                      href="https://forms.google.com/salonkita-beasiswa"
+                      href="https://bit.ly/Pendaftaran1000BeasiswaBeautyArtist"
                       target="_blank"
                       className="inline-block bg-pink-600 text-white font-bold px-8 py-4 rounded-full hover:bg-pink-700 transform hover:scale-105 transition duration-300 text-center shadow-lg"
                     >
@@ -1134,7 +1297,7 @@ function Home() {
                         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
                       </svg>
                     </a>
-                    <a href="/partnership" className="inline-flex items-center justify-center bg-white text-pink-600 font-semibold px-8 py-4 rounded-full border border-pink-200 hover:border-pink-600 transition duration-300 text-center">
+                    <Link to="/partnership" className="inline-flex items-center justify-center bg-white text-pink-600 font-semibold px-8 py-4 rounded-full border border-pink-200 hover:border-pink-600 transition duration-300 text-center">
                       Jadi Partner
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -1150,7 +1313,7 @@ function Home() {
                       >
                         <path d="m9 18 6-6-6-6" />
                       </svg>
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

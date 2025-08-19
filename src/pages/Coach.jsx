@@ -622,7 +622,7 @@ function Coach() {
                     <p className="text-xl font-medium text-pink-700 italic">"Latih satu, bangkitkan banyak. Bersama kita bisa membangun masa depan perempuan Indonesia."</p>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <a href="#" className="inline-block bg-pink-600 text-white font-bold px-8 py-4 rounded-full hover:bg-pink-700 transform hover:scale-105 transition duration-300 text-center shadow-lg">
+                    <a href="https://bit.ly/SiapJadiCoachBeauty" className="inline-block bg-pink-600 text-white font-bold px-8 py-4 rounded-full hover:bg-pink-700 transform hover:scale-105 transition duration-300 text-center shadow-lg">
                       📝 Isi Form Pendaftaran Coach
                     </a>
                     <a

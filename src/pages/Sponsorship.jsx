@@ -289,7 +289,7 @@ function Sponsorship() {
                 <div className="animate-fade-in-up js-animate delay-200">
                   <div className="flex flex-col md:flex-row gap-4 mt-2">
                     <a
-                      href="#"
+                      href="https://forms.gle/wVpwXTw3FuBu73aM8"
                       className="inline-block bg-gradient-to-r from-pink-500 to-pink-600 text-white font-bold px-8 py-4 rounded-full hover:bg-pink-700 transform hover:scale-105 transition duration-300 text-center shadow-lg w-full md:w-auto"
                     >
                       Isi Form Sponsor &amp; Mulai Berkontribusi

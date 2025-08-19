@@ -64,7 +64,7 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <a href="#apply" className="flex items-center py-2 px-4 text-pink-600 hover:bg-pink-50 rounded-md transition duration-200 sidebar-link" onClick={closeSidebar}>
+              <a href="https://bit.ly/Pendaftaran1000BeasiswaBeautyArtist" className="flex items-center py-2 px-4 text-pink-600 hover:bg-pink-50 rounded-md transition duration-200 sidebar-link" onClick={closeSidebar}>
                 <span className="w-2 h-2 bg-pink-400 rounded-full mr-3" />
                 Daftar Sekarang
               </a>
@@ -83,7 +83,7 @@ const Navbar = () => {
             </div>
             <div className="ml-3">
               <p className="text-sm font-medium">Contact Service</p>
-              <p className="text-xs">+62 123 4567 8901</p>
+              <p className="text-xs">+62 821-2507-4700</p>
             </div>
           </div>
         </div>
@@ -138,7 +138,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <a href="#apply" className="bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-700 transition duration-200 font-medium">
+                <a href="https://bit.ly/Pendaftaran1000BeasiswaBeautyArtist" className="bg-pink-600 text-white px-6 py-2 rounded-full hover:bg-pink-700 transition duration-200 font-medium">
                   Daftar
                 </a>
               </li>

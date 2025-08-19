@@ -24,8 +24,7 @@ function Mentor() {
                   <span className="text-pink-600">Menuju Sukses</span>
                 </h1>
                 <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">
-                  Wirausaha Muda Mandiri Foundation membuka peluang bagi siapa saja yang memiliki kepedulian dan waktu untuk berkontribusi sebagai Mentor Program 1.000 Beasiswa Beauty Artist. Tidak harus seorang psikolog profesional, namun
-                  memiliki empati, komunikasi yang baik, dan komitmen untuk mendampingi secara konsisten sangat diutamakan.
+                  Wirausaha Muda Mandiri Foundation membuka peluang bagi siapa saja yang memiliki kepedulian dan waktu untuk berkontribusi sebagai Mentor Program 1.000 Beasiswa Beauty Artist.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a href="#mentor-form" className="inline-block bg-pink-600 text-white font-semibold px-8 py-4 rounded-full hover:bg-pink-700 transform hover:scale-105 transition duration-300 text-center shadow-lg">
@@ -504,7 +503,7 @@ function Mentor() {
                     <p className="text-xl font-medium text-pink-700 italic">"Satu sesi mentoring bisa membuka seribu pintu perubahan. Yuk, bantu mereka melangkah lebih jauh!"</p>
                   </div>
                   <div className="flex flex-col sm:flex-row gap-4">
-                    <a href="#" className="inline-block bg-pink-600 text-white font-bold px-8 py-4 rounded-full hover:bg-pink-700 transform hover:scale-105 transition duration-300 text-center shadow-lg">
+                    <a href="https://bit.ly/SiapJadiMentorBeauty" className="inline-block bg-pink-600 text-white font-bold px-8 py-4 rounded-full hover:bg-pink-700 transform hover:scale-105 transition duration-300 text-center shadow-lg">
                       📝 Isi Form Pendaftaran Mentor
                     </a>
                     <a

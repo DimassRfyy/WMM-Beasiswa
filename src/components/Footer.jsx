@@ -13,7 +13,13 @@ const Footer = () => {
             </div>
             <p className="mb-4 text-gray-400 max-w-md">Program beasiswa untuk 1000 perempuan Indonesia di industri kecantikan. Pelatihan intensif, magang, dan jaminan kerja.</p>
             <div className="flex space-x-4">
-              <a href="#" className="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-pink-600 transition duration-200">
+              {/* Facebook */}
+              <a
+                href="https://www.facebook.com/share/19nLLzM8kh/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-pink-600 transition duration-200"
+              >
                 <span className="sr-only">Facebook</span>
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
@@ -23,7 +29,8 @@ const Footer = () => {
                   />
                 </svg>
               </a>
-              <a href="#" className="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-pink-600 transition duration-200">
+              {/* Instagram */}
+              <a href="https://instagram.com/wmm_foundation" target="_blank" rel="noopener noreferrer" className="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-pink-600 transition duration-200">
                 <span className="sr-only">Instagram</span>
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path
@@ -33,10 +40,30 @@ const Footer = () => {
                   />
                 </svg>
               </a>
-              <a href="#" className="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-pink-600 transition duration-200">
-                <span className="sr-only">Twitter</span>
+              {/* TikTok */}
+              <a href="https://tiktok.com/@wmm_foundation" target="_blank" rel="noopener noreferrer" className="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-pink-600 transition duration-200">
+                <span className="sr-only">TikTok</span>
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+                  <path d="M9.5 2h2v14a2.5 2.5 0 11-2.5-2.5V8h2v5.5a.5.5 0 10-1 0V16a1.5 1.5 0 103 0V2h2a6 6 0 006 6v2a8 8 0 01-8-8z" />
+                </svg>
+              </a>
+              {/* Youtube */}
+              <a href="https://www.youtube.com/@wmmfoundation" target="_blank" rel="noopener noreferrer" className="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-pink-600 transition duration-200">
+                <span className="sr-only">YouTube</span>
+                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M21.8 8.001a2.752 2.752 0 00-1.936-1.947C18.07 5.5 12 5.5 12 5.5s-6.07 0-7.864.554A2.752 2.752 0 002.2 8.001C1.646 9.795 1.646 12 1.646 12s0 2.205.554 3.999a2.752 2.752 0 001.936 1.947C5.93 18.5 12 18.5 12 18.5s6.07 0 7.864-.554a2.752 2.752 0 001.936-1.947C22.354 14.205 22.354 12 22.354 12s0-2.205-.554-3.999zM10 15.5v-7l6 3.5-6 3.5z" />
+                </svg>
+              </a>
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/company/wirausaha-muda-mandiri-wmm-foundation/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-800 w-10 h-10 rounded-full flex items-center justify-center text-white hover:bg-pink-600 transition duration-200"
+              >
+                <span className="sr-only">LinkedIn</span>
+                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.268c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm13.5 11.268h-3v-5.604c0-1.337-.026-3.063-1.867-3.063-1.868 0-2.156 1.459-2.156 2.967v5.7h-3v-10h2.881v1.367h.041c.401-.761 1.381-1.563 2.841-1.563 3.039 0 3.6 2.001 3.6 4.601v5.595z" />
                 </svg>
               </a>
             </div>
