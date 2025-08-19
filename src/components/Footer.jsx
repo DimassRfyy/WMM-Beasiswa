@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center mb-6">
-              <img src="assets/images/logos/logo.png" alt="SalonKita Logo" className="h-10 w-auto mr-3" />
+              <img src="assets/images/logos/wmm-logo-horizontal.png" alt="SalonKita Logo" className="h-10 w-auto mr-3" />
             </div>
             <p className="mb-4 text-gray-400 max-w-md">Program beasiswa untuk 1000 perempuan Indonesia di industri kecantikan. Pelatihan intensif, magang, dan jaminan kerja.</p>
             <div className="flex space-x-4">

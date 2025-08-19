@@ -1,11 +1,15 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const location = useLocation();
 
   const openSidebar = () => setSidebarOpen(true);
   const closeSidebar = () => setSidebarOpen(false);
+
+  // Helper untuk menentukan apakah link aktif
+  const isActive = (path) => location.pathname === path;
 
   return (
     <>
@@ -16,7 +20,7 @@ const Navbar = () => {
       >
         <div className="flex items-center justify-between p-6 border-b border-pink-100">
           <div className="flex items-center">
-            <img src="assets/images/logos/logo.png" alt="SalonKita Logo" className="h-12 w-auto" />
+            <img src="assets/images/logos/wmm-logo-noteks.png" alt="SalonKita Logo" className="h-12 w-auto" />
           </div>
           <button id="close-sidebar" className="text-pink-500 hover:text-pink-700 transition-colors" onClick={closeSidebar}>
             <svg xmlns="http://www.w3.org/2000/svg" width={24} height={24} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-x">
@@ -28,37 +32,57 @@ const Navbar = () => {
         <nav className="px-4 py-6">
           <ul className="space-y-6">
             <li>
-              <Link to="/" className="flex items-center py-2 px-4 text-pink-600 hover:bg-pink-50 rounded-md transition duration-200 sidebar-link" onClick={closeSidebar}>
+              <Link to="/" className={`flex items-center py-2 px-4 hover:bg-pink-50 rounded-md transition duration-200 sidebar-link ${isActive("/") ? "bg-pink-100 text-pink-700 font-bold" : "text-pink-600"}`} onClick={closeSidebar}>
                 <span className="w-2 h-2 bg-pink-400 rounded-full mr-3" />
                 Beranda
               </Link>
             </li>
             <li>
-              <Link to="/sponsorship" className="flex items-center py-2 px-4 text-pink-600 hover:bg-pink-50 rounded-md transition duration-200 sidebar-link" onClick={closeSidebar}>
+              <Link
+                to="/sponsorship"
+                className={`flex items-center py-2 px-4 hover:bg-pink-50 rounded-md transition duration-200 sidebar-link ${isActive("/sponsorship") ? "bg-pink-100 text-pink-700 font-bold" : "text-pink-600"}`}
+                onClick={closeSidebar}
+              >
                 <span className="w-2 h-2 bg-pink-400 rounded-full mr-3" />
                 Sponsorship
               </Link>
             </li>
             <li>
-              <Link to="/partnership" className="flex items-center py-2 px-4 text-pink-600 hover:bg-pink-50 rounded-md transition duration-200 sidebar-link" onClick={closeSidebar}>
+              <Link
+                to="/partnership"
+                className={`flex items-center py-2 px-4 hover:bg-pink-50 rounded-md transition duration-200 sidebar-link ${isActive("/partnership") ? "bg-pink-100 text-pink-700 font-bold" : "text-pink-600"}`}
+                onClick={closeSidebar}
+              >
                 <span className="w-2 h-2 bg-pink-400 rounded-full mr-3" />
                 Partnership
               </Link>
             </li>
             <li>
-              <Link to="/mentor" className="flex items-center py-2 px-4 text-pink-600 hover:bg-pink-50 rounded-md transition duration-200 sidebar-link" onClick={closeSidebar}>
+              <Link
+                to="/mentor"
+                className={`flex items-center py-2 px-4 hover:bg-pink-50 rounded-md transition duration-200 sidebar-link ${isActive("/mentor") ? "bg-pink-100 text-pink-700 font-bold" : "text-pink-600"}`}
+                onClick={closeSidebar}
+              >
                 <span className="w-2 h-2 bg-pink-400 rounded-full mr-3" />
                 Mentor
               </Link>
             </li>
             <li>
-              <Link to="/coach" className="flex items-center py-2 px-4 text-pink-600 hover:bg-pink-50 rounded-md transition duration-200 sidebar-link" onClick={closeSidebar}>
+              <Link
+                to="/coach"
+                className={`flex items-center py-2 px-4 hover:bg-pink-50 rounded-md transition duration-200 sidebar-link ${isActive("/coach") ? "bg-pink-100 text-pink-700 font-bold" : "text-pink-600"}`}
+                onClick={closeSidebar}
+              >
                 <span className="w-2 h-2 bg-pink-400 rounded-full mr-3" />
                 Coach
               </Link>
             </li>
             <li>
-              <Link to="/donation" className="flex items-center py-2 px-4 text-pink-600 hover:bg-pink-50 rounded-md transition duration-200 sidebar-link" onClick={closeSidebar}>
+              <Link
+                to="/donation"
+                className={`flex items-center py-2 px-4 hover:bg-pink-50 rounded-md transition duration-200 sidebar-link ${isActive("/donation") ? "bg-pink-100 text-pink-700 font-bold" : "text-pink-600"}`}
+                onClick={closeSidebar}
+              >
                 <span className="w-2 h-2 bg-pink-400 rounded-full mr-3" />
                 Donasi
               </Link>
@@ -93,8 +117,8 @@ const Navbar = () => {
       {/* Header */}
       <header className="sticky top-0 bg-white shadow-sm z-30 lg:px-8">
         <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-          <div className="flex items-center">
-            <img src="assets/images/logos/logo.png" alt="SalonKita Logo" className="h-12 w-auto" />
+          <div className="flex items-center p-1">
+            <img src="assets/images/logos/wmm-logo-noteks.png" alt="SalonKita Logo" className="h-12 w-auto" />
           </div>
           {/* Mobile menu button */}
           <button id="open-sidebar" className="md:hidden text-pink-600 hover:text-pink-800 transition-colors" onClick={openSidebar}>
@@ -108,32 +132,32 @@ const Navbar = () => {
           <nav className="hidden md:block">
             <ul className="flex space-x-6 lg:space-x-8">
               <li>
-                <Link to="/" className="text-pink-600 hover:text-pink-800 transition duration-200 font-medium">
+                <Link to="/" className={`transition duration-200 font-medium ${isActive("/") ? "text-pink-700 border-b-2 border-pink-600" : "text-pink-600 hover:text-pink-800"}`}>
                   Beranda
                 </Link>
               </li>
               <li>
-                <Link to="/sponsorship" className="text-pink-600 hover:text-pink-800 transition duration-200 font-medium">
+                <Link to="/sponsorship" className={`transition duration-200 font-medium ${isActive("/sponsorship") ? "text-pink-700 border-b-2 border-pink-600" : "text-pink-600 hover:text-pink-800"}`}>
                   Sponsorship
                 </Link>
               </li>
               <li>
-                <Link to="/partnership" className="text-pink-600 hover:text-pink-800 transition duration-200 font-medium">
+                <Link to="/partnership" className={`transition duration-200 font-medium ${isActive("/partnership") ? "text-pink-700 border-b-2 border-pink-600" : "text-pink-600 hover:text-pink-800"}`}>
                   Partnership
                 </Link>
               </li>
               <li>
-                <Link to="/mentor" className="text-pink-600 hover:text-pink-800 transition duration-200 font-medium">
+                <Link to="/mentor" className={`transition duration-200 font-medium ${isActive("/mentor") ? "text-pink-700 border-b-2 border-pink-600" : "text-pink-600 hover:text-pink-800"}`}>
                   Mentor
                 </Link>
               </li>
               <li>
-                <Link to="/coach" className="text-pink-600 hover:text-pink-800 transition duration-200 font-medium">
+                <Link to="/coach" className={`transition duration-200 font-medium ${isActive("/coach") ? "text-pink-700 border-b-2 border-pink-600" : "text-pink-600 hover:text-pink-800"}`}>
                   Coach
                 </Link>
               </li>
               <li>
-                <Link to="/donation" className="text-pink-600 hover:text-pink-800 transition duration-200 font-medium">
+                <Link to="/donation" className={`transition duration-200 font-medium ${isActive("/donation") ? "text-pink-700 border-b-2 border-pink-600" : "text-pink-600 hover:text-pink-800"}`}>
                   Donasi
                 </Link>
               </li>
