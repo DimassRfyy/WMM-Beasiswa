@@ -121,7 +121,7 @@ function Home() {
             <div className="flex flex-col md:flex-row items-center gap-12">
               <div className="md:w-1/2">
                 <div className="relative">
-                  <img src="assets/images/thumbnails/bg-makeup.avif" alt="Beauty training" className="rounded-lg shadow-xl" />
+                  <img src="assets/images/thumbnails/about.webp" alt="Beauty training" className="rounded-lg shadow-xl" />
                   <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg">
                     <div className="flex items-center gap-3">
                       <div className="bg-pink-100 p-3 rounded-full">
@@ -654,7 +654,7 @@ function Home() {
               </div>
               <div className="md:w-1/2 mt-10 md:mt-0">
                 <div className="relative">
-                  <img src="assets/images/thumbnails/bg-nailart.avif" alt="Beauty benefits" className="rounded-lg shadow-xl" />
+                  <img src="assets/images/thumbnails/manfaat.avif" alt="Beauty benefits" className="rounded-lg shadow-xl" />
                   <div className="absolute -top-6 -right-6 bg-white p-4 rounded-lg shadow-lg">
                     <div className="flex items-center gap-3">
                       <div className="bg-pink-100 p-3 rounded-full">
